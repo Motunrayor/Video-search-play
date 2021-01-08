@@ -1,15 +1,15 @@
 import React from "react";
 
 class Search extends React.Component {
-  state = { text: "" };
+  state = { term: "" };
 
   handleChange = (e) => {
-    this.setState({ text: e.target.value });
+    this.setState({ term: e.target.value });
   };
 
   handleSubmit = (e) => {
     e.preventDefault();
-    this.props.onTextSubmit(this.state.text);
+    this.props.onTextSubmit(this.state.term);
   };
   render() {
     return (

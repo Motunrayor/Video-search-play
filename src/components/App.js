@@ -18,7 +18,7 @@ class App extends React.Component {
     this.setState({ selectedVideo: video });
   };
   componentDidMount() {
-     this.onFormSubmit("web development")
+     this.onFormSubmit("software development")
   }
   render() {
     return (
